@@ -4,7 +4,7 @@
 <p><%= @post.description %></p>
 <p><%= @post.vote %>       </p>
 <!-- Add @post.catergory on live above once category not nil -->
-<p><%= link_to "Back", root_path %></p>
+<p><%= link_to "Back", root_path %> <%= link_to 'Delete Post', @post, method: :delete, data: { confirm: 'Are you sure?' } %></p>
 
 <% @comments.each do |comment|  %>
   <h4><%= comment.name %></h4>
