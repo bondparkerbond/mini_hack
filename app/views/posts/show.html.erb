@@ -1,2 +1,19 @@
-<h1>Posts#show</h1>
-<p>Find me in app/views/posts/show.html.erb</p>
+<h1><%= @post.title %></h1>
+
+<p><%= link_to "#{@post.url}", @post.url, :target => "_blank" %></p>
+<p><%= @post.description %></p>
+<p><%= @post.vote %>       </p>
+<!-- Add @post.catergory on live above once category not nil -->
+<p><%= link_to "Back", root_path %></p>
+
+<% @comments.each do |comment|  %>
+  <h4><%= comment.name %></h4>
+  <p><%= comment.body %></p>
+<% end %>
+
+
+
+
+
+
+
