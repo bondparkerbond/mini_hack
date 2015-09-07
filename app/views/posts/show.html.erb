@@ -1,5 +1,8 @@
-<p><%= link_to 'Home', root_path %></p>
-<h1><%= @post.category %></h1>
+<header>
+  <h1>not-Reddit: <%= @post.category %></h1>
+  <p><%= link_to 'Home', root_path %></p>
+</header>
+
 <h2><%= @post.title %></h2>
 
 <p><%= link_to "#{@post.url}", @post.url, :target => "_blank" %></p>

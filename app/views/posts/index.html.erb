@@ -1,7 +1,15 @@
-<h1>Welcome to not-Reddit</h1>
-<p><%= link_to 'New Post', new_post_path %></p>
+<header>
+  <h1>not-Reddit</h1>
+  <p><%= link_to 'New Post', new_post_path %></p>
+</header>
 
 <% @posts.each do |post| %>
-<h3><%= link_to "#{post.title}", post.url, :target => "_blank" %></h3>
-<p><%= link_to "Upvote", upvote_path(post) %> <%= post.vote %> <%= link_to "Downvote", downvote_path(post) %> <%= link_to "View Post", post_path(post) %></p>
+  <div class='link-container'>
+    <p class='vote'><%= link_to "^", upvote_path(post) %><br><%= post.vote %><br><%= link_to "v", downvote_path(post) %></p>
+
+    <div class='index-view'>
+      <h3><%= link_to "#{post.title}", post.url, :target => "_blank" %></h3>
+      <p><%= link_to "View Post", post_path(post) %></p>
+    </div>
+  </div>
 <% end %>
