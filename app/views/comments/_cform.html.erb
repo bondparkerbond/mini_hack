@@ -1,7 +1,5 @@
 <%= form_for [@post, @comment] do |f| %>
-<!-- f.hidden_field :post_id -->
-  <%= f.text_field :post_id %>
-  <%= f.label :post_id %><br>
+  <%= f.hidden_field :post_id %>
   <%= f.label :name %>
   <%= f.text_field :name %><br>
   <%= f.label :body %>
