@@ -74,13 +74,18 @@ html {
 header {
   padding: 18px;
   border-bottom: .5px solid black;
-  margin-bottom: 6px;
+  margin-bottom: 12px;
   background-color: rgba(0, 158, 255, 0.15);
 }
+/*header p {
+  display: inline-block;
+  border-top: .5px solid #5990D9;
+  border-bottom: .5px solid #5990D9;
+}*/
 
 .link-container {
   background-color: rgb(246, 246, 246);
-  border: 1px solid black;
+  border: .5px solid black;
   margin: 6px 12px 6px 0;
   border-left: none;
   height: 80px;
@@ -120,6 +125,14 @@ p {
   color: #232240;
 }
 
+h2 {
+  font: 800 18px "Martel";
+}
+
+h4 {
+  font: 800 16px "Martel";
+}
+
 /*
 LINKS
 */
@@ -135,3 +148,52 @@ VOTE
  .vote {
 
  }
+
+/*
+SHOW
+*/
+
+.show-body {
+  background-color: rgb(246, 246, 246);
+  border: .5px solid black;
+  margin: 6px 12px 6px 0;
+  border-left: none;
+  height: auto;
+  padding-left: 12px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.show-post {
+  margin-left: 75px;
+  margin-right: 12px;
+}
+
+.link{
+  margin: 4px 0 6px 0;
+}
+.link a{
+  color: #5990D9;
+}
+
+.options {
+  display: inline-block;
+  /*width: 200px;*/
+  border-top: .5px solid #5990D9;
+  border-bottom: .5px solid #5990D9;
+  margin: 12px 0 6px 0;
+  padding: 4px 0 4px 0;
+}
+
+.comment {
+  display: inline-block;
+  background-color: rgb(246, 246, 246);
+  border: .5px solid black;
+  margin: 6px 0 6px 12px;
+  border-right: none;
+  padding: 12px;
+  width: calc(100% - 40px);
+  height: auto;
+}
+.comment p {
+}
