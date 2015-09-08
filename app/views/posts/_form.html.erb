@@ -1,11 +1,13 @@
-<%= form_for @post do |f| %>
-  <%= f.label :title %>
-  <%= f.text_field :title %><br>
-  <%= f.label :url %>
-  <%= f.text_field :url %><br>
-  <%= f.label :description %>
-  <%= f.text_field :description %><br>
-  <%= f.label :category %>
-  <%= f.select :category, options_for_select([['General', 'General'], ['Tech', 'Tech'],['Funny', 'Funny'],['Entertainment', 'Entertainment'], ['News', 'News']])%><br>
-  <%= f.submit %>
-<% end %>
+<div class='form'>
+  <%= form_for @post do |f| %>
+    <p class='form-label'><%= f.label :title %></p>
+    <p><%= f.text_field :title %></p>
+    <p class='form-label'><%= f.label :url %></p>
+    <p><%= f.text_field :url %></p>
+    <p class='form-label'><%= f.label :description %></p>
+    <p><%= f.text_area :description %></p>
+    <p class='form-label'><%= f.label :category %></p>
+    <p><%= f.select :category, options_for_select([['General', 'General'], ['Tech', 'Tech'],['Funny', 'Funny'],['Entertainment', 'Entertainment'], ['News', 'News']])%></p>
+    <p><%= f.submit %><p>
+  <% end %>
+</div>

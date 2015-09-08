@@ -195,5 +195,20 @@ SHOW
   width: calc(100% - 40px);
   height: auto;
 }
-.comment p {
+
+/*
+FORMS
+*/
+
+.form {
+  font:  400 16px "Open Sans";
+  background-color: rgb(246, 246, 246);
+  border: .5px solid black;
+  padding: 12px;
+}
+.form p{
+  font:  400 16px "Open Sans";
+}
+.form-label {
+  width: 50px;
 }
