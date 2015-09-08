@@ -13,3 +13,202 @@
  *= require_tree .
  *= require_self
  */
+
+ html, body, div, span, applet, object, iframe,
+ h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+ a, abbr, acronym, address, big, cite, code,
+ del, dfn, em, img, ins, kbd, q, s, samp,
+ small, strike, strong, sub, sup, tt, var,
+ b, u, i, center,
+ dl, dt, dd, ol, ul, li,
+ fieldset, form, label, legend,
+ table, caption, tbody, tfoot, thead, tr, th, td,
+ article, aside, canvas, details, embed,
+ figure, figcaption, footer, header, hgroup,
+ menu, nav, output, ruby, section, summary,
+ time, mark, audio, video {
+ 	margin: 0;
+ 	padding: 0;
+ 	border: 0;
+ 	font-size: 100%;
+ 	font: inherit;
+ 	vertical-align: baseline;
+ }
+ /* HTML5 display-role reset for older browsers */
+ article, aside, details, figcaption, figure,
+ footer, header, hgroup, menu, nav, section {
+ 	display: block;
+ }
+ body {
+ 	line-height: 1;
+ }
+ ol, ul {
+ 	list-style: none;
+ }
+ blockquote, q {
+ 	quotes: none;
+ }
+ blockquote:before, blockquote:after,
+ q:before, q:after {
+ 	content: '';
+ 	content: none;
+ }
+ table {
+ 	border-collapse: collapse;
+ 	border-spacing: 0;
+ }
+
+/*
+MAIN
+*/
+
+html {
+  /*background: -webkit-linear-gradient(white, #8c7c68);
+  background: -o-linear-gradient(white, #8c7c68);
+  background: -moz-linear-gradient(white, #8c7c68);
+  background: linear-gradient(white, #8c7c68);*/
+  background-color: rgb(225, 225, 230);
+  min-height: 100%;
+}
+
+header {
+  padding: 18px;
+  border-bottom: .5px solid black;
+  margin-bottom: 12px;
+  background-color: rgba(0, 158, 255, 0.15);
+}
+/*header p {
+  display: inline-block;
+  border-top: .5px solid #5990D9;
+  border-bottom: .5px solid #5990D9;
+}*/
+
+.link-container {
+  background-color: rgb(246, 246, 246);
+  border: .5px solid black;
+  margin: 6px 12px 6px 0;
+  border-left: none;
+  height: 80px;
+  padding-left: 12px;
+}
+
+.vote{
+  float: left;
+  vertical-align: center;
+  width: 55px;
+  text-align: center;
+  padding: 2px;
+  border: .5px solid black;
+  height: auto;
+  margin: 12px 12px 12px 0;
+}
+
+.index-view {
+  height: 44px;
+  margin: 19px 0 19px 0;
+}
+/*
+TEXT
+*/
+
+h1 {
+  font: 800 36px "Martel";
+  color: #5990D9;
+}
+
+h3 {
+  font: 600 18px "Open Sans";
+}
+
+p {
+  font: 400 12px "Open Sans";
+  color: #232240;
+}
+
+h2 {
+  font: 800 18px "Martel";
+}
+
+h4 {
+  font: 800 16px "Martel";
+}
+
+/*
+LINKS
+*/
+
+a {
+  text-decoration: none;
+  color: #232240;
+}
+
+/*
+VOTE
+*/
+ .vote {
+
+ }
+
+/*
+SHOW
+*/
+
+.show-body {
+  background-color: rgb(246, 246, 246);
+  border: .5px solid black;
+  margin: 6px 12px 6px 0;
+  border-left: none;
+  height: auto;
+  padding-left: 12px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.show-post {
+  margin-left: 75px;
+  margin-right: 12px;
+}
+
+.link{
+  margin: 4px 0 6px 0;
+}
+.link a{
+  color: #5990D9;
+}
+
+.options {
+  display: inline-block;
+  /*width: 200px;*/
+  border-top: .5px solid #5990D9;
+  border-bottom: .5px solid #5990D9;
+  margin: 12px 0 6px 0;
+  padding: 4px 0 4px 0;
+}
+
+.comment {
+  display: inline-block;
+  background-color: rgb(246, 246, 246);
+  border: .5px solid black;
+  margin: 6px 0 6px 12px;
+  border-right: none;
+  padding: 12px;
+  width: calc(100% - 40px);
+  height: auto;
+}
+
+/*
+FORMS
+*/
+
+.form {
+  font:  400 16px "Open Sans";
+  background-color: rgb(246, 246, 246);
+  border: .5px solid black;
+  padding: 12px;
+}
+.form p{
+  font:  400 16px "Open Sans";
+}
+.form-label {
+  width: 50px;
+}

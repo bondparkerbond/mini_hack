@@ -1,8 +1,10 @@
-<%= form_for [@post, @comment] do |f| %>
-  <%= f.hidden_field :post_id %>
-  <%= f.label :name %>
-  <%= f.text_field :name %><br>
-  <%= f.label :body %>
-  <%= f.text_field :body %><br>
-  <%= f.submit %>
-<% end %>
+<div class='form'>
+  <%= form_for [@post, @comment] do |f| %>
+    <%= f.hidden_field :post_id %>
+    <p><%= f.label :name %></p>
+    <p><%= f.text_field :name %></p>
+    <p><%= f.label :body %></p>
+    <p><%= f.text_area :body %></p>
+    <p><%= f.submit %></p>
+  <% end %>
+</div>
